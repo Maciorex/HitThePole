@@ -1,24 +1,8 @@
-# README
+# HitThePole
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The main goal of creating this app is to master RoR skills.
+App is created for ski racers, who are looking for some decent training.
+The app brings some functions of social network, but the main feature
+is training search and post possibility. No equipment, no slope?
+Now you can find commercial and non commercial trainings organized by the others.
+Full Send!
