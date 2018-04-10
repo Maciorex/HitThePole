@@ -13,12 +13,17 @@
         <li><%= link_to "Link3", "/path3"  %></li>
       </ul>
       <ul class="nav navbar-right col-md-4">
-        <% if current_user %>
-          <%= current_user.full_name %>
-          <li><%= link_to "Logout", destroy_user_session_path, class: "btn btn-sm btn-danger", method: :delete %><li>
-        <% else %>
-          <li><%= link_to "Login", new_user_session_path, class: "btn btn-sm btn-info" %><li>
-        <% end %>
+        <div class="row">
+          <% if current_user %>
+            <li class="col-md-8">
+              <span class="glyphicon glyphicon-user"></span>
+              <%= link_to current_user.full_name, edit_user_registration_path %>
+            </li>
+            <li><%= link_to "Logout", destroy_user_session_path, class: "btn btn-sm btn-danger", method: :delete %><li>
+          <% else %>
+            <li><%= link_to "Login", new_user_session_path, class: "btn btn-sm btn-info" %><li>
+          <% end %>
+        </div>
       </ul>
     </div>
   </div>
