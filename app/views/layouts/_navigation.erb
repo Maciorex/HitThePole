@@ -14,9 +14,10 @@
       </ul>
       <ul class="nav navbar-right col-md-4">
         <% if current_user %>
-          <li><%= link_to "Logout", destroy_user_session_path, class: "btn btn-md btn-danger", method: :delete %><li>
+          <%= current_user.full_name %>
+          <li><%= link_to "Logout", destroy_user_session_path, class: "btn btn-sm btn-danger", method: :delete %><li>
         <% else %>
-          <li><%= link_to "Login", new_user_session_path, class: "btn btn-md btn-info" %><li>
+          <li><%= link_to "Login", new_user_session_path, class: "btn btn-sm btn-info" %><li>
         <% end %>
       </ul>
     </div>
