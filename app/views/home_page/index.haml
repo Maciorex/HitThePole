@@ -1,3 +1,6 @@
-%h1 Welcome to real Ski Racers World!
-%h3 Hungry for hitting the poles? Sign up now!
+%h1.row.col-md-offset-3 Welcome to real Ski Racers World!
+.col-md-12
+  = link_to image_tag("ted.png", alt: "Ted the Shred"), new_user_registration_path
+
+%h3.row Hungry for hitting the poles? Sign up now!
 = link_to "Sign up", new_user_registration_path, class: "btn btn-lg btn-success"
