@@ -3,19 +3,43 @@
 }
 
 .user-link {
-  color: rgb(121, 130, 128);
+  color: #fff;
+  &:hover {
+    text-decoration: none;
+    color: #a3a3a7;
+  }
 }
 
-.user-link:hover {
-  text-decoration: none;
-  color: rgb(16, 45, 87);
+.right-nav {
+  margin-top: 10px;
+}
+
+.navigation {
+  background-color: #3f8bcb;
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+    color: #a3a3a7;
+  }
+}
+
+#left-buttons {
+  color: #fff;
+  &:hover {
+    color: #a3a3a7;
+  }
 }
 
 h1 {
   font-size: 3em;
   margin-bottom: 20px;
-}
-
-.right-nav {
-  margin-top: 10px;
 }
