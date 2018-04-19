@@ -10,12 +10,12 @@
         %li= link_to "Link1", "/path1"
         %li= link_to "Link2", "/path2"
         %li= link_to "Link3", "/path3"
-      %ul.nav.navbar-right.col-md-4
+      %ul.nav.navbar-right.col-md-4.right-nav
         .row
           - if current_user
             %li.col-md-8
               %span.glyphicon.glyphicon-user
-              = link_to current_user.full_name, edit_user_registration_path
+                = link_to current_user.full_name, edit_user_registration_path, class: "user-link"
             %li= link_to "Logout", destroy_user_session_path, class: "btn btn-sm btn-danger", method: :delete
             %li
           - else
